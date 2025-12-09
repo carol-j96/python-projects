@@ -48,5 +48,6 @@ def main():
         
     except ValueError:
         print("Error: Please enter valid numbers for basic salary and allowances")
-if_name_=="_main_":
-    main()
+if __name__ == "__main__":
+    income = float(input("Enter taxable income: "))
+    print(calculate_paye(income))
